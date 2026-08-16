@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anri.local/schemas/source-record.schema.json",
+  "title": "ANRI source record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_id", "title", "locator_system", "authority_role", "access_status", "version_or_date"],
+  "properties": {
+    "source_id": {"type": "string", "minLength": 1},
+    "author_or_organization": {"type": "string"},
+    "title": {"type": "string", "minLength": 1},
+    "url_or_path": {"type": "string"},
+    "version_or_date": {"type": "string", "minLength": 1},
+    "locator_system": {"type": "string", "minLength": 1},
+    "authority_role": {"type": "string", "minLength": 1},
+    "direct_reading_status": {"enum": ["direct", "user_supplied", "indirect", "unverified", "not_applicable"]},
+    "access_status": {"enum": ["open", "user_supplied", "licensed", "restricted", "unknown", "denied"]},
+    "rights_note": {"type": "string"},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "skill_id": "SKILL-WR",
+  "fixture_set_id": "FIX-WR-001",
+  "fixtures": [
+    {"fixture_id":"FIX-WR-001","source_test_id":"TST-WR-001","input_shape":"missing assignment prompt","expected_status":"NEEDS_TASK","required_markers":["no invented requirements"]},
+    {"fixture_id":"FIX-WR-002","source_test_id":"TST-WR-002","input_shape":"strong source claim with weak locator","expected_status":"LOCATOR_FAILURE","required_markers":["direct verification"]},
+    {"fixture_id":"FIX-WR-003","source_test_id":"TST-WR-003","input_shape":"summary without commentary","expected_status":"MISSING_COMMENTARY","required_markers":["claim-tied questions"]},
+    {"fixture_id":"FIX-WR-004","source_test_id":"TST-WR-004","input_shape":"unsupported counterclaim","expected_status":"UNSUPPORTED_CLAIM","required_markers":["preserve learner text","evidence search"]},
+    {"fixture_id":"FIX-WR-005","source_test_id":"TST-WR-005","input_shape":"conflicting sources","expected_status":"SOURCE_CONFLICT","required_markers":["methods","contexts","no forced consensus"]},
+    {"fixture_id":"FIX-WR-006","source_test_id":"TST-WR-006","input_shape":"request for final AP submission","expected_status":"AUTHORSHIP_REVIEW","required_markers":["scaffold","learner checkpoints"]},
+    {"fixture_id":"FIX-WR-007","source_test_id":"TST-WR-007","input_shape":"intelligible multilingual draft","expected_status":"READY_WITH_CONDITIONS","required_markers":["meaning-first","audience/register choices"]},
+    {"fixture_id":"FIX-WR-008","source_test_id":"TST-WR-008","input_shape":"AI-generated citation or quotation","expected_status":"PROVENANCE_AUDIT","required_markers":["direct source check"]},
+    {"fixture_id":"FIX-WR-009","source_test_id":"TST-WR-009","input_shape":"argument feedback and copyediting request","expected_status":"READY_WITH_CONDITIONS","required_markers":["claim/evidence before conventions"]},
+    {"fixture_id":"FIX-WR-010","source_test_id":"TST-WR-010","input_shape":"AP Research rubric source","expected_status":"READY_WITH_CONDITIONS","required_markers":["version","permissions","no student paper"]},
+    {"fixture_id":"FIX-WR-011","source_test_id":"TST-WR-011","input_shape":"AP Seminar IRR sample","expected_status":"READY_WITH_CONDITIONS","required_markers":["calibration","no copied prose"]}
+  ]
+}

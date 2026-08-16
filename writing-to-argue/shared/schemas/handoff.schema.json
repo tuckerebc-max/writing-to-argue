@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anri.local/schemas/handoff.schema.json",
+  "title": "ANRI handoff record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["handoff_id", "from_skill", "to_skill", "input_ids", "preserved_fields", "transformation", "validation_status"],
+  "properties": {
+    "handoff_id": {"type": "string", "minLength": 1},
+    "from_skill": {"type": "string", "minLength": 1},
+    "to_skill": {"type": "string", "minLength": 1},
+    "parent_artifact_id": {"type": "string"},
+    "input_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "preserved_fields": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "transformation": {"type": "string", "minLength": 1},
+    "learner_decision_required": {"type": "array", "items": {"type": "string"}},
+    "unresolved_items": {"type": "array", "items": {"type": "string"}},
+    "validation_status": {"type": "string", "minLength": 1}
+  }
+}

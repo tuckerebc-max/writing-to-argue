@@ -1,0 +1,15 @@
+{
+  "release_id": "skill-wr-0.1.0",
+  "release_date": "2026-08-15",
+  "repository_visibility": "private",
+  "status": "finalized_private_draft",
+  "skill_id": "SKILL-WR",
+  "package_name": "writing-to-argue",
+  "competency_id": "COMP-WR-ARGUE",
+  "finalization_report_path": "catalog/finalization-report.json",
+  "source_manifest_path": "catalog/source-manifest.json",
+  "evaluator_entrypoint": "scripts/evaluate_package.py",
+  "repository_validator": "scripts/validate_repository.py",
+  "conditions": ["Independent fresh-context/model-based forward testing remains a human/reviewer gate.", "Official/current assessment and standards locators, exemplars, and rights must be confirmed before public production release.", "AP and assessed-mode assistance remains scaffold-first and learner-authored."],
+  "checksums_path": "catalog/checksums.json"
+}

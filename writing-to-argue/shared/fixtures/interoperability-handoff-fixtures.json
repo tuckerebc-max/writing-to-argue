@@ -1,0 +1,14 @@
+{
+  "fixture_set_id": "FIXTURE-INTEROPERABILITY-MAIN-001",
+  "schema_version": "0.1",
+  "fixtures": [
+    {"fixture_id":"FIX-INT-001","task_id":"TST-INT-001","from_skill":"SKILL-CR","to_skill":"SKILL-WR","expected_status":"READY_WITH_CONDITIONS","preserved_fields":["source_ids","evidence_ids","uncertainty_ids","provenance_ids","learner_decisions"]},
+    {"fixture_id":"FIX-INT-002","task_id":"TST-INT-002","from_skill":"SKILL-CR","to_skill":"SKILL-ARG","expected_status":"READY_WITH_CONDITIONS","preserved_fields":["source_ids","evidence_ids","uncertainty_ids"]},
+    {"fixture_id":"FIX-INT-003","task_id":"TST-INT-003","from_skill":"SKILL-QST","to_skill":"SKILL-WR","expected_status":"READY_WITH_CONDITIONS","preserved_fields":["source_ids","evidence_ids","uncertainty_ids","learner_decisions"]},
+    {"fixture_id":"FIX-INT-004","task_id":"TST-INT-004","from_skill":"SKILL-WR","to_skill":"SKILL-ARG","expected_status":"READY_WITH_CONDITIONS","preserved_fields":["source_ids","evidence_ids","claim_ids","learner_decisions"]},
+    {"fixture_id":"FIX-INT-005","task_id":"TST-INT-005","from_skill":"SKILL-ARG","to_skill":"SKILL-PAR","expected_status":"READY_WITH_CONDITIONS","preserved_fields":["source_ids","evidence_ids","claim_ids","uncertainty_ids","provenance_ids","learner_decisions"]},
+    {"fixture_id":"FIX-INT-006","task_id":"TST-INT-006","from_skill":"SKILL-ARG","to_skill":"SKILL-QST","expected_status":"NEEDS_SOURCE","preserved_fields":["source_ids","evidence_ids","uncertainty_ids"]},
+    {"fixture_id":"FIX-INT-007","task_id":"TST-INT-007","from_skill":"SKILL-ARG","to_skill":"SKILL-PAR","expected_status":"NEEDS_AUTHORITY","preserved_fields":["source_ids","evidence_ids","claim_ids","uncertainty_ids","provenance_ids"]},
+    {"fixture_id":"FIX-INT-008","task_id":"TST-INT-008","from_skill":"SKILL-PAR","to_skill":"HUMAN_REVIEW","expected_status":"NEEDS_AUTHORITY","preserved_fields":["source_ids","evidence_ids","uncertainty_ids","provenance_ids","learner_decisions","ai_use_log"]}
+  ]
+}

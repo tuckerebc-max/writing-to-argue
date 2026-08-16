@@ -1,0 +1,17 @@
+{
+  "registry_id": "REG-HANDOFF-TEXTBOOK-MAIN-001",
+  "schema_version": "0.1",
+  "as_of": "2026-08-14",
+  "status": "ready_with_conditions",
+  "routes": [
+    {"handoff_id":"HOF-CR-WR-001","from_skill":"SKILL-CR","to_skill":"SKILL-WR","required_inputs":["source_ids","evidence_ids","locators","claim_status","uncertainty_ids"],"preserve":["source_ids","evidence_ids","locators","uncertainty_ids","provenance_ids","learner_decisions"],"status":"validated_with_conditions"},
+    {"handoff_id":"HOF-CR-ARG-001","from_skill":"SKILL-CR","to_skill":"SKILL-ARG","required_inputs":["located_evidence","source_claim","observed_reasoning","alternative_interpretations"],"preserve":["source_ids","evidence_ids","uncertainty_ids"],"status":"specified_not_implemented"},
+    {"handoff_id":"HOF-QST-WR-001","from_skill":"SKILL-QST","to_skill":"SKILL-WR","required_inputs":["question","corpus_boundary","source_audit","perspective_map","method_limitations"],"preserve":["source_ids","evidence_ids","uncertainty_ids","learner_decisions"],"status":"specified_not_implemented"},
+    {"handoff_id":"HOF-QST-ARG-001","from_skill":"SKILL-QST","to_skill":"SKILL-ARG","required_inputs":["claim_candidates","evidence_ledger","perspectives","method_limitations","uncertainty"],"preserve":["source_ids","evidence_ids","uncertainty_ids","provenance_ids"],"status":"specified_not_implemented"},
+    {"handoff_id":"HOF-WR-ARG-001","from_skill":"SKILL-WR","to_skill":"SKILL-ARG","required_inputs":["task_contract","claim","reasons","evidence","commentary","qualifiers","alternative"],"preserve":["source_ids","evidence_ids","claim_ids","learner_decisions"],"status":"specified_not_implemented"},
+    {"handoff_id":"HOF-ARG-WR-001","from_skill":"SKILL-ARG","to_skill":"SKILL-WR","required_inputs":["task_contract","claim_map","warrant_audit","strongest_alternative","response_plan"],"preserve":["source_ids","evidence_ids","uncertainty_ids","provenance_ids"],"status":"specified_not_implemented"},
+    {"handoff_id":"HOF-ARG-QST-001","from_skill":"SKILL-ARG","to_skill":"SKILL-QST","required_inputs":["evidence_gap","source_conflict","causal_gap","untested_alternative"],"preserve":["source_ids","evidence_ids","uncertainty_ids"],"status":"specified_not_implemented"},
+    {"handoff_id":"HOF-ARG-PAR-001","from_skill":"SKILL-ARG","to_skill":"SKILL-PAR","required_inputs":["claim_map","evidence_ledger","strongest_alternative","uncertainty_record","affected_parties","authority","decision_rule"],"preserve":["source_ids","evidence_ids","claim_ids","uncertainty_ids","provenance_ids","learner_decisions"],"status":"validated_with_conditions"},
+    {"handoff_id":"HOF-PAR-REVIEW-001","from_skill":"SKILL-PAR","to_skill":"HUMAN_REVIEW","required_inputs":["decision_record","dissent_record","review_trigger","authority","provenance"],"preserve":["source_ids","evidence_ids","uncertainty_ids","provenance_ids","learner_decisions","ai_use_log"],"status":"specified_not_implemented"}
+  ]
+}

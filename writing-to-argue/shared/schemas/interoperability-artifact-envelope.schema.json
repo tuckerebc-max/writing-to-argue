@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anri.local/schemas/interoperability-artifact-envelope.schema.json",
+  "title": "ANRI cross-domain artifact envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["artifact_id", "project_id", "task_id", "parent_artifact_ids", "skill_id", "skill_version", "artifact_type", "status", "task_contract", "payload", "source_ids", "evidence_ids", "claim_ids", "uncertainty_ids", "provenance_ids", "learner_decisions", "ai_use_log", "accessibility_notes", "rights_and_permissions", "unresolved_items", "qa_checks", "next_action"],
+  "properties": {
+    "fixture_id": {"type": "string"},
+    "artifact_id": {"type": "string", "minLength": 1},
+    "project_id": {"type": "string", "const": "PRJ-ANRI-2026-0808"},
+    "task_id": {"type": "string", "minLength": 1},
+    "parent_artifact_ids": {"$ref": "#/$defs/idArray"},
+    "skill_id": {"enum": ["SKILL-CR", "SKILL-WR", "SKILL-QST", "SKILL-ARG", "SKILL-PAR"]},
+    "skill_version": {"type": "string", "minLength": 1},
+    "artifact_type": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "minLength": 1},
+    "task_contract": {"$ref": "#/$defs/taskContract"},
+    "payload": {"type": "object"},
+    "source_ids": {"$ref": "#/$defs/idArray"},
+    "evidence_ids": {"$ref": "#/$defs/idArray"},
+    "claim_ids": {"$ref": "#/$defs/idArray"},
+    "uncertainty_ids": {"$ref": "#/$defs/idArray"},
+    "provenance_ids": {"$ref": "#/$defs/idArray"},
+    "learner_decisions": {"type": "array", "items": {"$ref": "#/$defs/learnerDecision"}},
+    "ai_use_log": {"type": "array", "items": {"$ref": "#/$defs/aiUse"}},
+    "accessibility_notes": {"type": "array", "items": {"type": "string"}},
+    "rights_and_permissions": {"type": "array", "items": {"$ref": "#/$defs/rights"}},
+    "unresolved_items": {"type": "array", "items": {"$ref": "#/$defs/unresolved"}},
+    "qa_checks": {"type": "array", "items": {"$ref": "#/$defs/qaCheck"}},
+    "next_action": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "idArray": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "taskContract": {"type": "object", "required": ["question_or_problem", "purpose", "audience"], "properties": {"question_or_problem": {"type": "string"}, "purpose": {"type": "string"}, "audience": {"type": "string"}, "grade_band_or_course": {"type": ["string", "null"]}, "discipline_or_context": {"type": ["string", "null"]}, "mode": {"type": ["string", "null"]}, "constraints": {"type": "array", "items": {"type": "string"}}, "burden_or_standard": {"type": ["string", "null"]}}, "additionalProperties": false},
+    "learnerDecision": {"type": "object", "required": ["decision_id", "checkpoint", "options_considered", "selected_option", "reason"], "properties": {"decision_id": {"type": "string"}, "checkpoint": {"type": "string"}, "options_considered": {"type": "array", "items": {"type": "string"}}, "selected_option": {"type": "string"}, "reason": {"type": "string"}, "artifact_effect": {"type": "string"}}, "additionalProperties": false},
+    "aiUse": {"type": "object", "required": ["action", "inputs", "human_confirmation", "omissions_or_risks"], "properties": {"action": {"type": "string"}, "inputs": {"type": "array", "items": {"type": "string"}}, "human_confirmation": {"type": "boolean"}, "omissions_or_risks": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": false},
+    "rights": {"type": "object", "required": ["source_or_basis", "status", "note"], "properties": {"source_or_basis": {"type": "string"}, "status": {"enum": ["not_required", "cleared", "pending", "unknown", "denied"]}, "note": {"type": "string"}}, "additionalProperties": false},
+    "unresolved": {"type": "object", "required": ["item_id", "question", "status", "next_check"], "properties": {"item_id": {"type": "string"}, "question": {"type": "string"}, "status": {"type": "string"}, "next_check": {"type": "string"}}, "additionalProperties": false},
+    "qaCheck": {"type": "object", "required": ["test_id", "status", "evidence"], "properties": {"test_id": {"type": "string"}, "status": {"type": "string"}, "evidence": {"type": "string"}}, "additionalProperties": false}
+  }
+}

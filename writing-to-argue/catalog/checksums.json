@@ -1,0 +1,188 @@
+{
+  "algorithm": "sha256",
+  "status": "generated",
+  "generated_at": "2026-08-16T00:39:15.642863+00:00",
+  "file_count": 36,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "6a7b670982d02f3c8130b2c3c4a2810681c4f63dd66b7cd05302f84bb68b55aa",
+      "bytes": 109
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "45b324c3da4e63c54ebd5ce907ef60a12a598a1a9562b00e547de8fb3b456f43",
+      "bytes": 445
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "b99968ae393a85c07ba96e35db63423cd056b067e93e73ee6ee26b78b3b2f224",
+      "bytes": 168
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "159f692fd1bd236e80f5d9b993f716a39cfef18e91b8589c9b5512fe1961127f",
+      "bytes": 292
+    },
+    {
+      "path": "catalog/finalization-report.json",
+      "sha256": "c7fb43f69bb4c74b28f609be4b4f8e66a056307a81e5a618b35be6c8924acdc2",
+      "bytes": 777
+    },
+    {
+      "path": "catalog/handoff-route-registry.json",
+      "sha256": "7fa4246f1bae2c6987252652ec7df44bba958ce990d8e454dde08a816b7b418f",
+      "bytes": 2951
+    },
+    {
+      "path": "catalog/release-manifest.json",
+      "sha256": "8bee53e3c438ee90e25db9348641c4a6f4e18870b5345c7daf19493c4c515493",
+      "bytes": 848
+    },
+    {
+      "path": "catalog/skill-catalog.json",
+      "sha256": "c17a5b5ae28f8c3b69f6cd535f1462dc65d9e9f5956304dbd390613cb1903f4f",
+      "bytes": 1573
+    },
+    {
+      "path": "catalog/source-manifest.json",
+      "sha256": "19bbef900d8f3c3cd3e54112c90d3a509d81c4be06c49fe755efeb4897d57b4f",
+      "bytes": 3794
+    },
+    {
+      "path": "README.md",
+      "sha256": "6162c495b64c8ea4d7fc293c1a1bd299256243d3bb9c0346a0a5a9c1356053e9",
+      "bytes": 1103
+    },
+    {
+      "path": "references/competency-codification.md",
+      "sha256": "65204e03bf4324512f4aff0f0a0a6560a6fb1fe4f3bbddbc45394ee082f78397",
+      "bytes": 4426
+    },
+    {
+      "path": "references/evaluation-fixtures.json",
+      "sha256": "7cefd43383220f280d5dababed265daa379212a5fce0ba9b98750a56679bf983",
+      "bytes": 2298
+    },
+    {
+      "path": "references/evaluator-spec.json",
+      "sha256": "02d5adfcdd111d920dcda30578895347f08fdee7fe59a9e65ab594e12e4a3482",
+      "bytes": 2947
+    },
+    {
+      "path": "references/genre-revision-and-authorship.md",
+      "sha256": "c06e27dd929f2736e098ae137fb5330a39aa13cd88b4d3bb3a53c52f98a53294",
+      "bytes": 603
+    },
+    {
+      "path": "references/handoff-contracts.md",
+      "sha256": "d1b1efc91570da7a20073796c436ff71e42d07a352f2fa41fd19c793fb1d0538",
+      "bytes": 967
+    },
+    {
+      "path": "references/output-schema.json",
+      "sha256": "4184ee3ad8e0e2ddd21047685aa10503ef0ebb50913b1f77259e8b456ea78d64",
+      "bytes": 987
+    },
+    {
+      "path": "references/provenance-rights-authorship.md",
+      "sha256": "40ba4c1aa508160f420edcf646a1dabef80895270c21b0167314b9a46f96163f",
+      "bytes": 379
+    },
+    {
+      "path": "references/skill-contract.md",
+      "sha256": "87dd076c4c63b27d2324c081b40aa7dab2e2f552ff1533ad9f43415b94ce29a0",
+      "bytes": 1248
+    },
+    {
+      "path": "scripts/build_release_manifest.py",
+      "sha256": "53f5c8b1ac8d8b1e761a521def81449ac08dba20aced50784f61845a437c32eb",
+      "bytes": 2799
+    },
+    {
+      "path": "scripts/evaluate_package.py",
+      "sha256": "e894eceb778c247a1ea93014650c69d949525dd16a75f1d2fa03e7a910e8b11b",
+      "bytes": 5617
+    },
+    {
+      "path": "scripts/validate_repository.py",
+      "sha256": "dd9815cfbf1c4dba8a8082f6e9d4229f9406de8a91dbb58e046978e8d9a8ab28",
+      "bytes": 7023
+    },
+    {
+      "path": "shared/fixtures/interoperability-handoff-fixtures.json",
+      "sha256": "34be47d9fd07abace96016a14fc3d9989f7246789a128a039195e613d6bbac05",
+      "bytes": 2003
+    },
+    {
+      "path": "shared/references/authorship-and-assessment-boundaries.md",
+      "sha256": "1b2e7fd5b7cd043cfcc154002f8f09191410515eb0dec1174fe10626a50be611",
+      "bytes": 1304
+    },
+    {
+      "path": "shared/references/provenance-rights-currentness.md",
+      "sha256": "e215643d1a8814a2bf89c9411da2c173d8be8c4866361fac074c1b8b39f13b43",
+      "bytes": 1275
+    },
+    {
+      "path": "shared/references/routing-and-error-vocabulary.md",
+      "sha256": "4684238bd822cae1b9c47a3b1ae6b699e545aa3b6b3b8fb970fef0f6c126ca70",
+      "bytes": 1487
+    },
+    {
+      "path": "shared/references/shared-operating-contract.md",
+      "sha256": "0c3faaee4f951c7ee9803cd4ea0f101f9f78f3f7f19f3709902d4d884bbd7afe",
+      "bytes": 1683
+    },
+    {
+      "path": "shared/schemas/ai-use-authorship.schema.json",
+      "sha256": "fb17c743486bbe5b3188e6b517d3fec0a3120d9bb116c2817bcfd0c4e685874a",
+      "bytes": 667
+    },
+    {
+      "path": "shared/schemas/claim-reason-warrant.schema.json",
+      "sha256": "c9b545778e07dbddbe4fa40283bb08451861d2f8db8b6d1437c173af273b83ca",
+      "bytes": 1327
+    },
+    {
+      "path": "shared/schemas/evidence-record.schema.json",
+      "sha256": "fc5b7c730362fd0d41ed76a07962af95af99296c562b4e7a3708b443fd2a1198",
+      "bytes": 948
+    },
+    {
+      "path": "shared/schemas/handoff.schema.json",
+      "sha256": "1b637199f0e2c16148a8e02a05d59170d5b79455510ddea669f15700cbfdacda",
+      "bytes": 1017
+    },
+    {
+      "path": "shared/schemas/interoperability-artifact-envelope.schema.json",
+      "sha256": "4092ab2568cbc5e6c525e5e16e75b503097e56ca6ce74df0120d1a41f8c8ea0d",
+      "bytes": 4243
+    },
+    {
+      "path": "shared/schemas/learner-decision.schema.json",
+      "sha256": "aa593803d59a958d960181926ba3c8f82c3aa634c80001eaedf089bf24fc5c73",
+      "bytes": 674
+    },
+    {
+      "path": "shared/schemas/source-record.schema.json",
+      "sha256": "28897340691d99eec9096cf88d196b0778d674216280fe8ab401850d3d20f43b",
+      "bytes": 1036
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "e094d1dc77ab803f6073bd40e827d5f082fdf8be4c5bf9f6cf1ee927e5426ef2",
+      "bytes": 4267
+    },
+    {
+      "path": "tests/fixtures/domain-fixtures.json",
+      "sha256": "7cefd43383220f280d5dababed265daa379212a5fce0ba9b98750a56679bf983",
+      "bytes": 2298
+    },
+    {
+      "path": "tests/fixtures/representative-record.json",
+      "sha256": "b418f46ebdcaf10bf0f09a277963b17aa6d71c8ad0ddc3ca6f42059ff976ba5b",
+      "bytes": 2677
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anri.local/schemas/claim-reason-warrant.schema.json",
+  "title": "ANRI claim, reason, and warrant record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claim_id", "claim_text", "scope", "status", "reason_ids", "evidence_ids", "warrant_status", "alternative_status"],
+  "properties": {
+    "claim_id": {"type": "string", "minLength": 1},
+    "claim_text": {"type": "string", "minLength": 1},
+    "scope": {"type": "string"},
+    "claim_type": {"enum": ["fact", "value", "policy", "definition", "interpretation", "causal", "mixed", "unknown"]},
+    "status": {"type": "string"},
+    "reason_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "warrant_status": {"enum": ["present", "partial", "missing", "challenged", "not_applicable"]},
+    "qualifier": {"type": "string"},
+    "alternative_status": {"enum": ["strongest_reconstructed", "weak", "missing", "not_applicable", "unresolved"]},
+    "response_selected": {"enum": ["rebut", "concede", "qualify", "revise", "withdraw", "unresolved", "not_selected"]},
+    "uncertainty_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+  }
+}

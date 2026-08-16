@@ -1,0 +1,26 @@
+{
+  "catalog_id": "CATALOG-SKILL-WR-001",
+  "schema_version": "0.1",
+  "as_of": "2026-08-15",
+  "source_snapshot": "2026-08-09",
+  "release_status": "finalized_private_draft",
+  "repository_visibility": "private",
+  "source_root_alias": "ANRI-TEXTBOOK-BUILD-2026-08-08",
+  "skills": [
+    {
+      "skill_id": "SKILL-WR",
+      "package_name": "writing-to-argue",
+      "label": "Writing to Argue",
+      "package_version": "0.1.0",
+      "status": "finalized_private_draft",
+      "allow_implicit_invocation": true,
+      "competency_id": "COMP-WR-ARGUE",
+      "canonical_source_ids": ["SPEC-WR-001", "ANRI-DOM-WR-001", "ARCH-WR-001", "CORP-WR-001"],
+      "evaluator_id": "EVAL-WR-001",
+      "source_paths": ["02_Domain_Prompts/writing/writing-prompt.md", "03_Corpora/writing/corpus-crosswalk.md", "04_Technical_Specifications/writing/competency-design-specification.md", "04_Technical_Specifications/writing/technical-specification.md", "05_Textbook_Architectures/writing/textbook-architecture.md"],
+      "validation_test_ids": ["TST-WR-001", "TST-WR-002", "TST-WR-003", "TST-WR-004", "TST-WR-005", "TST-WR-006", "TST-WR-007", "TST-WR-008", "TST-WR-009", "TST-WR-010", "TST-WR-011", "TST-INT-004", "TST-INT-005"],
+      "handoff_ids": ["HOF-CR-WR-001", "HOF-QST-WR-001", "HOF-WR-ARG-001", "HOF-ARG-WR-001"],
+      "paths": {"skill": "SKILL.md", "ui_metadata": "agents/openai.yaml", "evaluator": "references/evaluator-spec.json", "codification": "references/competency-codification.md", "representative_record": "tests/fixtures/representative-record.json"}
+    }
+  ]
+}

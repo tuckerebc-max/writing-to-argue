@@ -1,0 +1,19 @@
+{
+  "finalization_id": "SKILL-WR-standalone-finalization",
+  "checked_at": "2026-08-15",
+  "status": "FINALIZED_PRIVATE_DRAFT",
+  "repository_visibility": "private",
+  "skill_id": "SKILL-WR",
+  "package_name": "writing-to-argue",
+  "source_fidelity": {
+    "status": "VERIFIED_WITH_LOCAL_SOURCE_ROOT",
+    "source_root_hint": "AI-Native-ELA-Reasoning-Inquiry-Textbooks-2026-08-08"
+  },
+  "evaluator_status": "CONDITIONAL",
+  "errors": [],
+  "remaining_conditions": [
+    "Fresh-context/model-based forward testing remains a human/reviewer gate.",
+    "Official/current assessment, standards, and rights confirmation remains required before public production release.",
+    "AP and assessed-mode assistance remains scaffold-first and learner-authored."
+  ]
+}

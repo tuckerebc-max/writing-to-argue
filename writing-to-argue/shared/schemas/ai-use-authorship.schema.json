@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anri.local/schemas/ai-use-authorship.schema.json",
+  "title": "ANRI AI use and authorship record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["action", "inputs", "human_confirmation", "learner_decision_boundary", "omissions_or_risks"],
+  "properties": {
+    "action": {"type": "string", "minLength": 1},
+    "inputs": {"type": "array", "items": {"type": "string"}},
+    "human_confirmation": {"type": "boolean"},
+    "learner_decision_boundary": {"type": "string", "minLength": 1},
+    "omissions_or_risks": {"type": "array", "items": {"type": "string"}}
+  }
+}

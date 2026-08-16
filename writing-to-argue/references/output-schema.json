@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anri.local/schemas/writing-to-argue-payload.schema.json",
+  "title": "Writing to Argue payload",
+  "type": "object",
+  "required": ["task_contract", "claim_map", "evidence_ledger", "commentary_map", "organization_plan", "revision_priorities", "alternative_plan", "learner_checkpoints", "ai_use_and_authorship_log"],
+  "properties": {
+    "task_contract": {"type": "object"},
+    "claim_map": {"type": "array", "items": {"type": "object"}},
+    "evidence_ledger": {"type": "array", "items": {"type": "object"}},
+    "commentary_map": {"type": "array", "items": {"type": "object"}},
+    "organization_plan": {"type": "object"},
+    "revision_priorities": {"type": "array", "items": {"type": "object"}},
+    "alternative_plan": {"type": "object"},
+    "learner_checkpoints": {"type": "array", "items": {"type": "object"}},
+    "ai_use_and_authorship_log": {"type": "array", "items": {"type": "object"}}
+  }
+}

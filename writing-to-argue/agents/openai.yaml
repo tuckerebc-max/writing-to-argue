@@ -1,0 +1,6 @@
+interface:
+  display_name: "Writing to Argue"
+  short_description: "Build audience-aware evidence-based arguments"
+  default_prompt: "Use $writing-to-argue to turn this evidence into a learner-confirmed claim, organized argument, and revision plan."
+policy:
+  allow_implicit_invocation: true

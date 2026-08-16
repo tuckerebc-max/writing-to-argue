@@ -1,0 +1,85 @@
+{
+  "manifest_id": "SOURCE-MANIFEST-TEXTBOOK-MAIN-001",
+  "schema_version": "0.1",
+  "source_root_alias": "ANRI-TEXTBOOK-BUILD-2026-08-08",
+  "source_root_hint": "AI-Native-ELA-Reasoning-Inquiry-Textbooks-2026-08-08",
+  "source_snapshot": "2026-08-09",
+  "records": [
+    {
+      "source_record_id": "DOM-CR",
+      "skill_id": "SKILL-CR",
+      "authority_role": "main_textbook_domain",
+      "paths": [
+        "02_Domain_Prompts/close-reading/close-reading-prompt.md",
+        "03_Corpora/close-reading/corpus-crosswalk.md",
+        "03_Corpora/close-reading/crosswalk-manifest.json",
+        "04_Technical_Specifications/close-reading/competency-design-specification.md",
+        "04_Technical_Specifications/close-reading/technical-specification.md",
+        "05_Textbook_Architectures/close-reading/textbook-architecture.md"
+      ]
+    },
+    {
+      "source_record_id": "DOM-WR",
+      "skill_id": "SKILL-WR",
+      "authority_role": "main_textbook_domain",
+      "paths": [
+        "02_Domain_Prompts/writing/writing-prompt.md",
+        "03_Corpora/writing/corpus-crosswalk.md",
+        "03_Corpora/writing/crosswalk-manifest.json",
+        "04_Technical_Specifications/writing/competency-design-specification.md",
+        "04_Technical_Specifications/writing/technical-specification.md",
+        "05_Textbook_Architectures/writing/textbook-architecture.md"
+      ]
+    },
+    {
+      "source_record_id": "DOM-QST",
+      "skill_id": "SKILL-QST",
+      "authority_role": "main_textbook_domain",
+      "paths": [
+        "02_Domain_Prompts/quest-ap-seminar-research/quest-ap-seminar-research-prompt.md",
+        "03_Corpora/quest-ap-seminar-research/corpus-crosswalk.md",
+        "03_Corpora/quest-ap-seminar-research/crosswalk-manifest.json",
+        "04_Technical_Specifications/quest-ap-seminar-research/competency-design-specification.md",
+        "04_Technical_Specifications/quest-ap-seminar-research/technical-specification.md",
+        "05_Textbook_Architectures/quest-ap-seminar-research/textbook-architecture.md"
+      ]
+    },
+    {
+      "source_record_id": "DOM-ARG",
+      "skill_id": "SKILL-ARG",
+      "authority_role": "main_textbook_domain",
+      "paths": [
+        "02_Domain_Prompts/argumentation/argumentation-prompt.md",
+        "03_Corpora/argumentation/corpus-crosswalk.md",
+        "03_Corpora/argumentation/crosswalk-manifest.json",
+        "04_Technical_Specifications/argumentation/competency-design-specification.md",
+        "04_Technical_Specifications/argumentation/technical-specification.md",
+        "05_Textbook_Architectures/argumentation/textbook-architecture.md"
+      ]
+    },
+    {
+      "source_record_id": "DOM-PAR",
+      "skill_id": "SKILL-PAR",
+      "authority_role": "main_textbook_domain",
+      "paths": [
+        "02_Domain_Prompts/public-argument-resolution/public-argument-resolution-prompt.md",
+        "03_Corpora/public-argument-resolution/corpus-crosswalk.md",
+        "03_Corpora/public-argument-resolution/crosswalk-manifest.json",
+        "04_Technical_Specifications/public-argument-resolution/competency-design-specification.md",
+        "04_Technical_Specifications/public-argument-resolution/technical-specification.md",
+        "05_Textbook_Architectures/public-argument-resolution/textbook-architecture.md"
+      ]
+    },
+    {
+      "source_record_id": "SPEC-INT-001",
+      "authority_role": "shared_interoperability",
+      "paths": [
+        "01_Universal_Prompt_System/domain-registry.md",
+        "01_Universal_Prompt_System/skill-interoperability-spec.md",
+        "01_Universal_Prompt_System/handoff-route-registry.json",
+        "04_Technical_Specifications/interoperability-artifact-envelope.schema.json",
+        "04_Technical_Specifications/skill-interoperability/handoff-fixtures.json"
+      ]
+    }
+  ]
+}

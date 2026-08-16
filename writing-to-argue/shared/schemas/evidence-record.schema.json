@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://anri.local/schemas/evidence-record.schema.json",
+  "title": "ANRI evidence unit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["evidence_id", "source_id", "locator", "content_type", "verification_status", "limitation"],
+  "properties": {
+    "evidence_id": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "locator": {"type": "string", "minLength": 1},
+    "content": {"type": "string"},
+    "content_type": {"enum": ["quote", "paraphrase", "observation", "data", "image", "graph", "inference"]},
+    "verification_status": {"enum": ["verified", "user_supplied", "needs_check", "conflict", "unverified"]},
+    "relevance_note": {"type": "string"},
+    "limitation": {"type": "string", "minLength": 1},
+    "rights_status": {"enum": ["cleared", "user_supplied", "pending", "unknown", "denied"]}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "evaluator_id": "EVAL-WR-001",
+  "skill_id": "SKILL-WR",
+  "competency_id": "COMP-WR-ARGUE",
+  "version": "0.1.0",
+  "canonical_sources": ["SPEC-WR-001", "ANRI-DOM-WR-001", "ARCH-WR-001", "CORP-WR-001"],
+  "functional_requirement_ids": ["FR-WR-01", "FR-WR-02", "FR-WR-03", "FR-WR-04", "FR-WR-05", "FR-WR-06", "FR-WR-07", "FR-WR-08", "FR-WR-09", "FR-WR-10", "FR-WR-11", "FR-WR-12"],
+  "observable_performance_ids": ["OP-WR-01", "OP-WR-02", "OP-WR-03", "OP-WR-04", "OP-WR-05", "OP-WR-06", "OP-WR-07", "OP-WR-08", "OP-WR-09"],
+  "diagnostic_dimensions": ["task_fit", "claim_scope", "evidence_quality_fit", "commentary_warrant", "alternative_handling", "organization", "source_integrity", "language_control", "revision_quality", "authorship_transparency"],
+  "required_test_ids": ["TST-WR-001", "TST-WR-002", "TST-WR-003", "TST-WR-004", "TST-WR-005", "TST-WR-006", "TST-WR-007", "TST-WR-008", "TST-WR-009", "TST-WR-010", "TST-WR-011", "TST-INT-004", "TST-INT-005"],
+  "checks": [
+    {"check_id":"WR-CHECK-001","type":"required_paths","paths":["skill_id","skill_version","task_contract","payload.claim_map","payload.evidence_ledger","payload.commentary_map","payload.organization_plan","payload.revision_priorities","payload.alternative_plan","payload.learner_checkpoints","payload.ai_use_and_authorship_log","source_ids","evidence_ids","claim_ids","next_action"],"failure_status":"NEEDS_TASK","message":"Task, claim, evidence, reasoning, revision, and authorship records are required."},
+    {"check_id":"WR-CHECK-002","type":"all_items_have","path":"payload.claim_map","fields":["claim_id","scope","evidence_ids"],"failure_status":"UNSUPPORTED_CLAIM","message":"Every promoted claim needs scope and evidence linkage."},
+    {"check_id":"WR-CHECK-003","type":"all_items_have","path":"payload.evidence_ledger","fields":["evidence_id","source_id","locator","status"],"failure_status":"PROVENANCE_AUDIT","message":"Every evidence ledger entry needs direct source linkage and locator."},
+    {"check_id":"WR-CHECK-004","type":"unique_values","path":"claim_ids","failure_status":"PROVENANCE_AUDIT","message":"Claim IDs must not be duplicated across revisions or handoffs."},
+    {"check_id":"WR-CHECK-005","type":"present_paths","paths":["uncertainty_ids","provenance_ids","learner_decisions","accessibility_notes","rights_and_permissions"],"failure_status":"NEEDS_REVIEW","message":"Uncertainty, provenance, learner, accessibility, and rights fields must remain visible."},
+    {"check_id":"WR-CHECK-006","type":"manual_review","topic":"genre, AP pathway, and authorship","condition":"Human review is required for AP/graded products, protected rubric use, learner-authorship claims, and transfer from ARG or QST."}
+  ],
+  "release_conditions": ["No invented requirement, citation, quote, source, or current rule.", "AP/SAT/assessment sources remain versioned and rights-bounded.", "Claim/evidence/organization review precedes convention editing."]
+}
